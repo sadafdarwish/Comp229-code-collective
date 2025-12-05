@@ -21,10 +21,12 @@ const app = express();
 // ✅ Basic middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173"], // later we'll add your Vercel URL here
+    // later we'll add your deployed frontend URL here as well
+    origin: ["http://localhost:5173"],
     credentials: true,
   })
 );
+
 app.use(express.json());
 
 // ✅ Static files (public folder)
@@ -36,6 +38,16 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
+
+// ✅ Simple home route so we don't get "Not Found" on /
+app.get("/", (req, res) => {
+  res.send("Code Collective API is running 🚀");
+});
+
+// ✅ Health-check route
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok", message: "Backend is deployed and working" });
+});
 
 // ✅ Start server
 const PORT = process.env.PORT || 5000;
