@@ -23,7 +23,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      // add your deployed frontend later, e.g.
+      // later add your deployed frontend here, e.g.:
       // "https://your-frontend.vercel.app"
     ],
     credentials: true,
