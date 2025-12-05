@@ -10,19 +10,22 @@ import userRoutes from "./routes/user.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 import projectRoutes from "./routes/project.routes.js";
 
-// ✅ Load environment variables BEFORE anything else
+// Load environment variables
 dotenv.config();
 
-// ✅ Connect to MongoDB Atlas
+// Connect to MongoDB Atlas
 connectDB();
 
 const app = express();
 
-// ✅ Basic middleware
+// ✅ CORS
 app.use(
   cors({
-    // later we'll add your deployed frontend URL here as well
-    origin: ["http://localhost:5173"],
+    origin: [
+      "http://localhost:5173",
+      // add your deployed frontend later, e.g.
+      // "https://your-frontend.vercel.app"
+    ],
     credentials: true,
   })
 );
@@ -39,7 +42,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 
-// ✅ Simple home route so we don't get "Not Found" on /
+// ✅ Simple home route
 app.get("/", (req, res) => {
   res.send("Code Collective API is running 🚀");
 });
