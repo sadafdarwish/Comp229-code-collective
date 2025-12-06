@@ -1,14 +1,9 @@
-# 🚀 Code Collective – COMP229 Final Project
+# COMP229 – Code Collective (Final Release)
 
-A MERN-stack portfolio management app built for COMP229.
-Includes authentication, project CRUD, protected routes, and full deployment.
+A full-stack MERN application built as the Final Release Project for COMP229.
+The app allows users to register, log in, and manage personal project entries using secure JWT authentication.
 
-🧑‍🤝‍🧑 Team Members & Roles
-Member	Role	Responsibilities
-Sadaf Darwish	Member 1 – Backend & Frontend Deployment	Final code setup, MongoDB Atlas connection, backend deployment (Render), frontend deployment (Netlify), JWT Auth, Login/Register, CRUD for Projects
-Kadin Chawah	Member 2 – EDD v3 (External Design Document)	Wireframes, UI screens, color palette, team logo, navigation layout, authentication architecture
-Maharaj Nath	Member 3 – Agile Management + Documentation	Trello/Jira final backlog, task board updates, sprint documentation, README updates, backlog PDF
-🌍 Live Deployment Links
+## 🚀 Live Deployments
 🔹 Frontend (Netlify)
 
 👉 https://comp229-code-collective.netlify.app/
@@ -17,77 +12,103 @@ Maharaj Nath	Member 3 – Agile Management + Documentation	Trello/Jira final bac
 
 👉 https://comp229-code-collective.onrender.com/
 
-🏗️ Tech Stack
+🔹 GitHub Repository
+
+👉 https://github.com/sadafdarwish/Comp229-code-collective
+
+## 🧑‍💻 Team Members & Roles
+Member	Student Role	Responsibilities
+Sadaf Darwish	Part 1 – Backend + Frontend Deployment	Full backend setup, JWT Auth, CRUD, MongoDB Atlas, Render + Netlify deployment
+Kadin Chawah	Part 2 – External Design Document (EDD v3 PDF)	Wireframes, UI design, color scheme, navigation, screenshots, authentication strategy
+Maharaj Nath	Part 3 – Agile + GitHub Documentation	Trello/Jira backlog, sprint board updates, README additions, documentation
+## 📦 Features Implemented (Part 1 Completed by Sadaf)
+🔐 Authentication
+
+Register / Login
+
+Password hashing (bcrypt)
+
+JWT token generation
+
+Protected routes for logged-in users
+
+📁 CRUD Operations
+
+Users can:
+
+Create a project
+
+Read their project list
+
+Update a project
+
+Delete a project
+
+🗄️ Database
+
+MongoDB Atlas cloud database
+
+Fully connected using Mongoose
+
+🌐 Deployment
+
+Frontend deployed to Netlify
+
+Backend deployed to Render
+
+CORS configured correctly
+
+🧭 Routing
+
+Auth routes → /api/auth
+
+User routes → /api/users
+
+Project CRUD routes → /api/projects
+
+## 🛠️ Tech Stack
 Frontend
 
-React + Vite
+React (Vite)
 
 React Router
 
-Axios
+Fetch API / Axios
 
-Tailwind / Custom CSS
+Vite
 
 Backend
 
-Node.js / Express
+Node.js
 
-MongoDB Atlas (NoSQL)
+Express.js
+
+MongoDB Atlas
 
 Mongoose
 
-JWT Authentication
+JWT
 
-Bcrypt Password Hashing
+Bcrypt
 
-Dev Tools
+CORS
 
-Postman API testing
+Tools
 
-Render (Backend hosting)
+GitHub
 
 Netlify (Frontend hosting)
 
-GitHub collaboration
+Render (Backend hosting)
 
-Trello/Jira project management
+Postman (API testing)
 
-🔐 Main Features (Completed in Part 1)
-Authentication
-
-✔ Register
-✔ Login
-✔ JWT-based authentication
-✔ Protected routes
-✔ Password hashing
-
-Projects CRUD
-
-✔ Create Project
-✔ Read Project
-✔ Update Project
-✔ Delete Project
-
-Frontend Functionality
-
-✔ Fully working UI
-✔ Links to Login/Register
-✔ Projects dashboard
-✔ Error-free navigation
-
-Backend Functionality
-
-✔ MongoDB Atlas connected
-✔ API routes protected
-✔ Deployed + Active Health Check
-✔ /api/projects fully functional
-
-⚙️ How to Run the Project Locally
-➡️ 1. Clone the repository
-git clone https://github.com/sadafdarwish/Comp229-code-collective.git
+## ⚙️ How to Run the Project Locally
+1️⃣ Clone the Repository
+git clone https://github.com/sadafdarwish/Comp229-code-collective
 cd Comp229-code-collective
 
-➡️ 2. Backend Setup
+### 2️⃣ Backend Setup
 cd backend
 npm install
 
@@ -95,76 +116,53 @@ npm install
 Create a .env file:
 
 PORT=5000
-MONGO_URI=your_mongodb_atlas_link
-JWT_SECRET=your_secret
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_secret_key
 
 
 Run backend:
 
-npm run dev
+npm start
 
-
-Backend will start at:
-
-http://localhost:5000
-
-➡️ 3. Frontend Setup
+### 3️⃣ Frontend Setup
 cd client
 npm install
 npm run dev
 
 
-Frontend runs at:
+Open local app:
 
 http://localhost:5173
 
-📡 API Routes Summary
-Auth
-POST /api/auth/register
-POST /api/auth/login
+## ✔️ Project Status
 
-Users
-GET /api/users/me
+✅ Backend completed
+✅ Frontend connected
+✅ Full CRUD functional
+✅ JWT auth functional
+✅ Atlas connected
+✅ Deployments online
+🔥 Part 1 successfully completed by Sadaf
 
-Projects
-GET /api/projects
-POST /api/projects
-PUT /api/projects/:id
-DELETE /api/projects/:id
+## 📄 Submission Notes for Professor & Team
+What Sadaf (YOU) should send in MS Teams:
 
-📁 Project Folder Structure
-Comp229-code-collective/
- ├── backend/
- │   ├── controllers/
- │   ├── middleware/
- │   ├── models/
- │   ├── routes/
- │   ├── server.js
- │   ├── config/db.js
- │   └── .env
- │
- ├── client/
- │   ├── src/
- │   ├── public/
- │   ├── vite.config.js
- │   └── package.json
- │
- └── README.md
+Message Example:
 
-🧪 Health Check Endpoint
-GET /api/health
+Hi Team,
 
+I have completed Part 1 – Final Code + Deployment.
+Both frontend and backend are fully deployed, connected to MongoDB Atlas, and the full app is working (Login, Register, JWT, CRUD, Protected Routes).
 
-Response:
+Please use the README for your parts:
 
-{
-  "status": "ok",
-  "message": "Backend is deployed and working"
-}
+Kadin → finalize EDD v3 with wireframes + screenshots from the deployed site
 
-✔️ Project Status
+Maharaj → update Trello/Jira and add documentation to README
 
-✅ Backend completed & deployed
-✅ Frontend completed & deployed
-✅ Part 1 delivered (Sadaf Darwish)
-🔜 Part 2 & 3 to be completed by Kadin & Maharaj
+Deployment links:
+🔹 Frontend (Netlify): https://comp229-code-collective.netlify.app/
+
+🔹 Backend (Render): https://comp229-code-collective.onrender.com/
+
+Let me know if you need anything!
