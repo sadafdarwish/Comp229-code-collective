@@ -63,3 +63,69 @@ This repository contains the **final deployed version** of both the frontend and
 
 # 📦 Project Structure  
 
+Comp229-code-collective/
+│
+├── backend/
+│ ├── config/
+│ ├── controllers/
+│ ├── middleware/
+│ ├── models/
+│ ├── routes/
+│ ├── server.js
+│ └── package.json
+│
+└── frontend/
+├── src/
+├── public/
+├── vite.config.js
+└── package.json
+
+
+---
+
+# ⚙️ How to Run the Project Locally  
+
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/sadafdarwish/Comp229-code-collective
+cd Comp229-code-collective
+
+🛠 Backend Setup
+cd backend
+npm install
+
+
+Create a .env file inside /backend:
+
+MONGO_URI=your_atlas_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+
+
+Start backend:
+
+npm start
+
+🎨 Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+
+Open browser:
+👉 http://localhost:5173/
+
+✔️ Features Checklist
+Feature	Status
+User Registration	✅
+User Login	✅
+JWT Authentication	✅
+Protected Routes	✅
+Create Project	✅
+Edit Project	✅
+Delete Project	✅
+View All Projects	✅
+MongoDB Atlas Connected	✅
+Backend Deployed on Render	✅
+Frontend Deployed on Netlify	✅
+
