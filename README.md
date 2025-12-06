@@ -144,25 +144,3 @@ http://localhost:5173
 ✅ Deployments online
 🔥 Part 1 successfully completed by Sadaf
 
-## 📄 Submission Notes for Professor & Team
-What Sadaf (YOU) should send in MS Teams:
-
-Message Example:
-
-Hi Team,
-
-I have completed Part 1 – Final Code + Deployment.
-Both frontend and backend are fully deployed, connected to MongoDB Atlas, and the full app is working (Login, Register, JWT, CRUD, Protected Routes).
-
-Please use the README for your parts:
-
-Kadin → finalize EDD v3 with wireframes + screenshots from the deployed site
-
-Maharaj → update Trello/Jira and add documentation to README
-
-Deployment links:
-🔹 Frontend (Netlify): https://comp229-code-collective.netlify.app/
-
-🔹 Backend (Render): https://comp229-code-collective.onrender.com/
-
-Let me know if you need anything!
