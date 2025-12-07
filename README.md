@@ -40,6 +40,12 @@ This repository contains the **final deployed version** of both the frontend and
 
 ---
 
+# 🔎 Additional Resources
+- External Design Document (EDD v3) – Included in submission files  
+- Trello Backlog PDF – Included in submission files
+
+---
+
 # 🧩 Tech Stack  
 
 ### **Frontend**
