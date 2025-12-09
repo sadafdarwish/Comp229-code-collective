@@ -34,9 +34,9 @@ This repository contains the **final deployed version** of both the frontend and
 
 | Member | Role | Responsibility |
 |--------|------|----------------|
-| **Sadaf Darwish** | Part 1 | Final backend + frontend code, MongoDB Atlas integration, Render & Netlify deployment, ensuring full app functionality |
-| **Kadin Chawah** | Part 2 | External Design Document (EDD v3): wireframes, UI screenshots, color palette, navigation & authentication design |
-| **Maharaj Nath** | Part 3 | Agile Project Management: Trello/Jira updates, backlog PDF, README documentation & verification |
+| **Sadaf Darwish (301493791)** | Part 1 | Final backend + frontend code, MongoDB Atlas integration, Render & Netlify deployment, ensuring full app functionality |
+| **Kadin Chawah (301543171)** | Part 2 | External Design Document (EDD v3): wireframes, UI screenshots, color palette, navigation & authentication design |
+| **Maharaj Nath (301359875)** | Part 3 | Agile Project Management: Trello/Jira updates, backlog PDF, README documentation & verification |
 
 ---
 
